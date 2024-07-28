@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Set the background image for the entire body */
+body {
+    background: url('"D:\DSE Final Project\pms frontend\project-management-system\images\Background Picture.png"') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the login container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for form elements */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-box .form-group {
+    margin-bottom: 15px;
+}
+
+.login-box .btn {
+    width: 100%;
+}
