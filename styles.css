@@ -13,12 +13,14 @@ body {
 
 /* Style the login container */
 .login-container {
-    width: 100%;
-    max-width: 400px;
+    max-width: 400px;    /* Maximum width for responsiveness */
+    width: 100%;         /* Make it responsive to its parent container */
+    height: 358px;       /* Set the height from Figma */
     padding: 20px;
     background: rgba(253, 136, 39, 0.69);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;      /* Center the container */
 }
 
 /* Additional styles for form elements */
