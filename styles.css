@@ -24,6 +24,19 @@ body {
 }
 
 /* Additional styles for form elements */
+
+.login-box {
+    position: relative; /* Allows precise positioning of the logo */
+    text-align: center; /* Centers the logo horizontally */
+    padding-top: 20px; /* Adds spacing at the top for the logo */
+  }
+  
+  .logo-image {
+    width: 80px; /* Adjust width to your desired logo size */
+    height: auto; /* Maintains the logo's aspect ratio */
+    margin-bottom: 10px; /* Adds spacing between the logo and other elements */
+  }
+  
 .login-box h2 {
     text-align: center;
     margin-bottom: 20px;
