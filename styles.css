@@ -1,6 +1,4 @@
-/* styles.css */
-
-/* Set the background image for the entire body */
+/* General body settings */
 body {
     background: url('images/Background Picture.png') no-repeat center center fixed;
     background-size: cover;
@@ -11,41 +9,124 @@ body {
     justify-content: center;
 }
 
-/* Style the login container */
+/* Login Container: Overall box styling */
 .login-container {
-    max-width: 400px;    /* Maximum width for responsiveness */
-    width: 100%;         /* Make it responsive to its parent container */
-    height: 358px;       /* Set the height from Figma */
-    padding: 20px;
     background: rgba(253, 136, 39, 0.69);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;      /* Center the container */
-}
-
-/* Additional styles for form elements */
-
-.login-box {
-    position: relative; /* Allows precise positioning of the logo */
-    text-align: center; /* Centers the logo horizontally */
-    padding-top: 20px; /* Adds spacing at the top for the logo */
-  }
-  
-  .logo-image {
-    width: 80px; /* Adjust width to your desired logo size */
-    height: auto; /* Maintains the logo's aspect ratio */
-    margin-bottom: 10px; /* Adds spacing between the logo and other elements */
-  }
-  
-.login-box h2 {
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.login-box .form-group {
+/* Logo Styling */
+.logo-image {
+    width: 80px;
     margin-bottom: 15px;
 }
 
-.login-box .btn {
-    width: 100%;
+/* Form Input Styling */
+.input-custom {
+    background: #D9D9D9;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-custom:focus {
+    outline: none;
+    box-shadow: 0 0 5px #71B8D7;
+}
+
+/* Login Button Styling */
+.btn-custom {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #71B8D7;
+    color: white;
+    border: none;
+    /*border-radius: 50%;*/
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-custom:hover {
+    background-color: #5a9bb5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Main container styling */
+.uType-container {
+    background: rgba(253, 136, 39, 0.69); /* Orange transparent background */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px; /* Adjusted for wider layout */
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: auto;
+}
+
+/* Logo Styling */
+.logo-image {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* Select User Type Text */
+h2 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* User Buttons Container */
+.user-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.btn-user {
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 120px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-user:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* User Image Styling */
+.user-image {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Button Text */
+.btn-user p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
 }

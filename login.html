@@ -10,28 +10,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Main Container -->
     <div class="login-container">
         <div class="login-box">
+            <!-- Logo -->
             <img src="images/Logo.png" alt="Logo" class="logo-image">
             <h2>Login</h2>
+            <!-- Form -->
             <form>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <label for="email" class="sr-only">Email:</label>
+                    <input type="email" class="form-control input-custom" id="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" class="form-control" id="password" required>
+                    <label for="password" class="sr-only">Password:</label>
+                    <input type="password" class="form-control input-custom" id="password" placeholder="Password" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <!-- Login Button -->
+                <button type="submit" class="btn-custom">Login</button>
             </form>
         </div>
     </div>
-    <!-- jQuery -->
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!-- Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
